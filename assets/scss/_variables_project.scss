@@ -1,0 +1,17 @@
+
+// main colors
+$offwhite: hsla(0, 0%, 90%, 1);
+$gray: hsla(0, 0%, 34%, 1);
+$darkcoal: hsla(0, 0%, 12%, 1);
+$coal: hsla(0, 0%, 16%, 1);
+$cyan: hsla(192, 100%, 50%, 1);
+$lightcyan: hsla(192, 100%, 75%, 1);
+$lavender: hsla(286, 29%, 55%, 1);
+
+
+$primary: $coal;
+$secondary: hsla(0, 0%, 12%, 1);
+
+.btn.-lavender {
+ background: $lavender;
+}
