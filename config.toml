@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://go-vela.github.io/site/"
 title = "Vela"
 
 enableRobotsTXT = true
