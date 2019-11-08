@@ -18,8 +18,8 @@ jobs:
           
     - name: Install PostCSS
       run: |
-        - sudo npm install -D --save autoprefixer
-        - sudo npm install -D --save postcss-cli
+        npm install -D --save autoprefixer
+        npm install -D --save postcss-cli
           
     - uses: actions/checkout@v1
       
