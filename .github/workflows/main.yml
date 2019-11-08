@@ -9,9 +9,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    container:
-      image: node:latest
-    steps:   
+    steps:
+    - uses: actions/checkout@v1
+        
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+          
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2.2.2
       with:
@@ -22,8 +26,6 @@ jobs:
       run: |
         npm install -D --save autoprefixer
         npm install -D --save postcss-cli
-          
-    - uses: actions/checkout@v1
       
     - name: Build Hugo
       run: cd themes/docsy && git submodule update -f --init && cd ../.. && hugo
