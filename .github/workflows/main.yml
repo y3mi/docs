@@ -16,6 +16,11 @@ jobs:
       with:
         hugo-version: '0.59.1'
           
+    - name: Install PostCSS
+      run: |
+        - sudo npm install -D --save autoprefixer
+        - sudo npm install -D --save postcss-cli
+          
     - uses: actions/checkout@v1
       
     - name: Build Hugo
