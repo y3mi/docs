@@ -28,7 +28,7 @@ jobs:
         npm install -D --save postcss-cli
       
     - name: Build Hugo
-      run: cd themes/docsy && git submodule update -f --init && cd ../.. && hugo
+      run: git submodule update -f --init --recursive && cd ../.. && hugo
       
     - name: Deploy
       uses: crazy-max/ghaction-github-pages@v1
