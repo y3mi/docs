@@ -1,18 +1,36 @@
-+++
-title = "Roles"
-toc = true
-weight = 10
-+++
+---
+title: "Roles"
+linkTitle: "Roles"
+weight: 10
+description: >
+  Learn about the authorization roles.
+---
 
-Vela does not maintain any authentication (AuthN) and authorization (AuthZ) internally but instead, inherits it access from the source (version control) provider. Currently, Vela can connect to a GitHub instance, so it uses [GitHub's access model](https://help.github.com/en/articles/access-permissions-on-github) for access control.
+{{% alert title="Warning" color="warning" %}}
+At this time the only Source Control Provider is GitHub. So this documentation is tailored for those users.
+{{% /alert %}}
+
+Vela does not maintain any authentication (AuthN) or authorization (AuthZ) internally but instead, inherits its access from the source (version control) provider. More information on GitHub's access model can be founds their [documentation]](https://help.github.com/en/articles/access-permissions-on-github).
+
+Platform Roles:
+
+* Admin
+
+Source Provider Roles:
 
 * Admin
 * Write
 * Read
 
+### Platform Roles
+
+Platform admins have full control when interacting with the CLI, UI, and API.
+
+### Source Provider Roles:
+
 Admins within the GitHub organization have the option to use GitHub orgs to allow users to have permissions on all repositories in the org, or to use fine grained access of adding access for users directly to individual repositories.
 
-### Admin
+#### Admin
 
 The **admin** role enables full access to the repository which grants the following access levels for resources:
 
@@ -22,7 +40,7 @@ The **admin** role enables full access to the repository which grants the follow
 * Secret: Read/Write
 * Step: Read/Write
 
-### Write
+#### Write
 
 The **write** role enables read and write access to the repository which grants the following access levels for resources:
 
@@ -32,7 +50,7 @@ The **write** role enables read and write access to the repository which grants 
 * Secret: None
 * Step: Read/Write
 
-### Read
+#### Read
 
 The **read** role enables read access to the repository which grants the following access levels for resources:
 
