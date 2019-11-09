@@ -31,6 +31,19 @@ $secondary: hsla(0, 0%, 12%, 1);
 
 .search input {
     width: 100%;
+    border-radius: 7px;
+    padding: 4px 8px;
+}
+.search.-navbar input {
+    background: $coal;
+    border: 1px solid $offwhite;
+    color: $offwhite;
+}
+
+.search.-sidebar input {
+    background: white;
+    border: 1px solid $gray;
+    color: $coal;
 }
 
 .search-results {
