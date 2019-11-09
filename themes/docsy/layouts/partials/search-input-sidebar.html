@@ -1,5 +1,5 @@
 <div>
-    <div class="search" id="search2">
+    <div class="search -sidebar" id="search2">
         <input type="text" placeholder="Search site..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
         <div class="search-results" :style="{'display': showresult?'block':'none'}">
             <a v-for="item in result" :href="item.url">{{ printf "{{ item.display }}" }}</a>
