@@ -53,6 +53,9 @@
             vuesearch2.result = resultmp.slice();
         });
         this.result = this.result.slice(0, 10);
+        this.result = this.result.sort(function (a, b) {
+            return ('' + a.display).localeCompare(b.display);
+        })
         this.showresult = (this.result.length > 0);
     }
     let vuesearch2 = new Vue({
