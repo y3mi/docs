@@ -1,6 +1,7 @@
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 {{ $jsBase := resources.Get "js/base.js" }}
 {{ $jsAnchor := resources.Get "js/anchor.js" }}
 {{ $jsSearch := resources.Get "js/search.js" | resources.ExecuteAsTemplate "js/search.js" .Site.Home }}
@@ -10,5 +11,141 @@
 {{ else }}
 {{ $js := $js | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
-{{ end }}
-{{ partial "hooks/body-end.html" . }}
+{{ end }} {{ partial "hooks/body-end.html" . }}
+
+<!-- Static Site Search Vue Components -->
+<script>
+    let mounted = function () {
+        // loading the full JSON to 'bdd'
+        axios.get('{{ with .Site.GetPage "/search.md" }}{{ .Permalink }}{{ end }}')
+            .then(function(response) {
+                vuesearch1.bdd = response.data.results;
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+    }
+    let close = function() {
+        // Close the dropdown when the input search loses focus
+        // with a 300ms delay to let time for the click on link to work
+        setTimeout(function() {
+            vuesearch1.showresult = false;
+            vuesearch1.txt = '';
+        }, 300);
+    }
+    let search = function() {
+        // we will search when the user stopped typing for 500ms
+        clearTimeout(this.timeoutID);
+        this.timeoutID = setTimeout(this.dosearch, 500);
+    }
+
+    let dosearch = function() {
+        // do the search in the 'bdd'
+        this.result = []; // clear previous result
+        let words = this.txt.split(' '); // split typed text with spaces
+        let words2 = []; // words that will be searched
+        words.forEach(function(element) { // to skip empty words, if multiple spaces typed (i.e "a  b c")
+            if (element) {
+                words2.push(element);
+            }
+        });
+        let r;
+        let resultmp;
+        words2.forEach(function(e) {
+            r = vuesearch1.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+            if (vuesearch1.result.length === 0) {
+                vuesearch1.result = r.slice();
+                return;
+            }
+            resultmp = [];
+            vuesearch1.result.forEach(function(all1) {
+                r.forEach(function(all2) {
+                    if (all1.url === all2.url) {
+                        resultmp.push(all1);
+                    }
+                });
+            });
+            vuesearch1.result = resultmp.slice();
+        });
+        this.result = this.result.slice(0, 10); // 10 results max
+        this.showresult = (this.result.length > 0);
+    }
+    let vuesearch1 = new Vue({
+        el: '#search1',
+        data: {
+            txt: '',
+            timeoutID: 0,
+            showresult: false,
+            result: {},
+            bdd: []
+        },
+        mounted: mounted,
+        methods: {
+            close: close,
+            search: search,
+            dosearch: dosearch
+        }
+    });
+    let mounted_sidebar = function() {
+        axios.get('{{ with .Site.GetPage "/search.md" }}{{ .Permalink }}{{ end }}')
+            .then(function(response) {
+                vuesearch2.bdd = response.data.results;
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+    }
+    let close_sidebar = function() {
+        setTimeout(function() {
+            vuesearch2.showresult = false;
+            vuesearch2.txt = '';
+        }, 300);
+    }
+
+    let dosearch_sidebar = function() {
+        this.result = [];
+        var words = this.txt.split(' ');
+        var words2 = [];
+        words.forEach(function(element) {
+            if (element) {
+                words2.push(element);
+            }
+        });
+        var r;
+        var resultmp;
+        words2.forEach(function(e) {
+            r = vuesearch2.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+            if (vuesearch2.result.length === 0) {
+                vuesearch2.result = r.slice();
+                return;
+            }
+            resultmp = [];
+            vuesearch2.result.forEach(function(all1) {
+                r.forEach(function(all2) {
+                    if (all1.url === all2.url) {
+                        resultmp.push(all1);
+                    }
+                });
+            });
+            vuesearch2.result = resultmp.slice();
+        });
+        this.result = this.result.slice(0, 10);
+        this.showresult = (this.result.length > 0);
+    }
+    let vuesearch2 = new Vue({
+        el: '#search2',
+        data: {
+            txt: '',
+            timeoutID: 0,
+            showresult: false,
+            result: {},
+            bdd: []
+        },
+        mounted: mounted_sidebar,
+        methods: {
+            close: close_sidebar,
+            search: search,
+            dosearch: dosearch_sidebar
+        }
+    });
+</script>
