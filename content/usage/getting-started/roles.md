@@ -10,7 +10,7 @@ description: >
 At this time the only Source Control Provider is GitHub. So this documentation is tailored for those users.
 {{% /alert %}}
 
-Vela does not maintain any authentication (AuthN) or authorization (AuthZ) internally but instead, inherits its access from the source (version control) provider. More information on GitHub's access model can be founds their [documentation]](https://help.github.com/en/articles/access-permissions-on-github).
+Vela does not maintain any authentication (AuthN) or authorization (AuthZ) internally but instead, inherits its access from the source (version control) provider. More information on GitHub's access model can be founds their [documentation](https://help.github.com/en/articles/access-permissions-on-github).
 
 Platform Roles:
 
