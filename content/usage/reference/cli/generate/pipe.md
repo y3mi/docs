@@ -9,7 +9,7 @@ description: >
 
 The generate command allows you to generate default pipelines for languages Go, Java, or Node.
 
-```
+```sh
 NAME:
    vela generate pipe - Generate a vela pipeline in a directory
 
@@ -44,7 +44,7 @@ EXAMPLES:
  5. Generate a go vela pipeline in a current directory."
     $ vela generate pipe -type go
  6. Generate a vela pipeline with stages in current directory."
-    $ vela generate pipe -stages   
+    $ vela generate pipe -stages
 ```
 
 ## Sample

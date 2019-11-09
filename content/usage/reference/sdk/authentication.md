@@ -13,7 +13,6 @@ Vela client requires the following four parameters specified to connect to a ser
 | baseURL   | URL to a Vela service.   |
 | token | Token is the API key to your account. |
 
-
 ```go
 package main
 

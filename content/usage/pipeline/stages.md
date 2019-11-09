@@ -12,7 +12,7 @@ By default, all stages run in **parallel**.
 
 You can specify that a stage requires another stage's completion by using the `needs:` field. Needs takes an array of stage names that need to be completed before the given step can begin.
 
-```
+```yaml
 version: "1"
 
 stages:
