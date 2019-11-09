@@ -21,6 +21,7 @@ CATEGORY:
 DESCRIPTION:
    Use this command to repair a damaged repository
 ```
+
 ## Flags
 
 ```sh

@@ -5,7 +5,7 @@ description: >
   Learn how to install the CLI.
 ---
 
-Instructions are OS-specific, please keep in mind the OS when referring to the intallation instructions below.
+Instructions are OS-specific, please keep in mind the OS when referring to the installation instructions below.
 
 ### MacOS
 

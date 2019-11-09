@@ -13,7 +13,6 @@ description: >
 | `engine` | `native` | secret backend the agent uses to lookup the secret (default: `native`) |
 | `type` | `repository` | secret type the agent uses to lookup the secret (default: `repository`) |
 
-
 #### Engine Options
 
 * `native` - stores the secret in the Vela database

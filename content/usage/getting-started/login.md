@@ -26,4 +26,4 @@ Please see authentication in the [API reference](/site/usage/reference/api/authe
 
 ## SDK
 
-Please see uthentication in the [sdk reference](/site/usage/reference/sdk/authentication).
+Please see authentication in the [sdk reference](/site/usage/reference/sdk/authentication).
