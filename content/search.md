@@ -1,6 +1,6 @@
 ---
-title: Search Results
-layout: search
-
+title: "Search"
+layout: "search"
+outputs: ["json"]
+noindex: true
 ---
-
