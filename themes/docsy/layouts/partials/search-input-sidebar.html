@@ -1,13 +1,13 @@
 <div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
     <div class="search -sidebar" id="search2">
-        <input type="text" placeholder="Search site..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+        <input type="text" placeholder="Search site..." v-model="txt" @keyup="search_sidebar()" @blur="close_sidebar()" maxlength="50">
         <div class="search-results" :style="{'display': showresult?'block':'none'}">
             <a v-for="item in result" :href="item.url">{{ printf "{{ item.display }}" }}</a>
         </div>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script>
     let mounted_sidebar = function() {
         axios.get('{{ with .Site.GetPage "/search.md" }}{{ .Permalink }}{{ end }}')
@@ -23,6 +23,12 @@
             vuesearch2.showresult = false;
             vuesearch2.txt = '';
         }, 300);
+    }
+
+    let search_sidebar = function() {
+        // we will search when the user stopped typing for 500ms
+        clearTimeout(this.timeoutID);
+        this.timeoutID = setTimeout(this.dosearch_sidebar, 500);
     }
 
     let dosearch_sidebar = function() {
@@ -69,9 +75,9 @@
         },
         mounted: mounted_sidebar,
         methods: {
-            close: close_sidebar,
-            search: search,
-            dosearch: dosearch_sidebar
+            close_sidebar: close_sidebar,
+            search_sidebar: search_sidebar,
+            dosearch_sidebar: dosearch_sidebar
         }
     });
 </script>
