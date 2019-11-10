@@ -3,20 +3,20 @@ title: "Logs"
 linkTitle: "Logs"
 weight: 20
 description: >
-  Learn how to use the API to view build logs.
+  Learn how to  view build logs.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/repos/:org/:repo/builds/:build/logs
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of a organtization. |
+| repo | Name of a repository. |
+| build | Number of build. |
 
 ## Permissions
 
@@ -26,12 +26,26 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
-{
-  "docs": "Coming soon"
-}
+[
+	{
+		"id": 1,
+		"step_id": 1,
+		"build_id": 1,
+		"repo_id": 1,
+		"data": "SGVsbG8sIFdvcmxkIQ=="
+	},
+	{
+		"id": 2,
+		"step_id": 2,
+		"build_id": 1,
+		"repo_id": 1,
+		"data": "SGVsbG8sIFdvcmxkIQ=="
+	}
+]
 ```

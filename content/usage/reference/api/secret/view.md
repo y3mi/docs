@@ -3,20 +3,22 @@ title: "View"
 linkTitle: "View"
 weight: 15
 description: >
-  Learn how to use the API to view a secret.
+  Learn how to  view a secret.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/secrets/:engine/:type/:org/:name/:secret
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| engine | Name of a engine. |
+| type | Name of the type. |
+| org | Name of a organtization. |
+| name | Name of a repository or team. |
+| secret | Name of the secret. |
 
 ## Permissions
 
@@ -26,12 +28,25 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
 {
-  "docs": "Coming soon"
+	"id": 1,
+	"org": "github",
+	"repo": "octocat",
+	"team": "",
+	"name": "foo",
+	"value": "",
+	"type": "repo",
+	"images": [
+		"alpine"
+	],
+	"events": [
+		"push"
+	]
 }
 ```

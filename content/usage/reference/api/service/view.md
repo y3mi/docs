@@ -3,13 +3,13 @@ title: "View"
 linkTitle: "View"
 weight: 15
 description: >
-  Learn how to use the API to view a service.
+  Learn how to  view a service.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/repos/:org/:repo/builds/:build/services/:service
 ```
 
 | Param | Description |
@@ -32,6 +32,16 @@ Documentation Coming Soon!
 
 ```json
 {
-  "docs": "Coming soon"
+	"id": 1,
+	"build_id": 1,
+	"repo_id": 1,
+	"number": 1,
+	"name": "clone",
+	"status": "success",
+	"error": "",
+	"exit_code": 0,
+	"created": 1563475419,
+	"started": 1563475420,
+	"finished": 1563475421,
 }
 ```

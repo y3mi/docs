@@ -3,20 +3,20 @@ title: "Get"
 linkTitle: "Get"
 weight: 10
 description: >
-  Learn how to use the API to get services.
+  Learn how to  get services.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/repos/:org/:repo/builds/:build/services
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of a organtization. |
+| repo | Name of a repository. |
+| build | Number of build. |
 
 ## Permissions
 
@@ -26,12 +26,38 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
-{
-  "docs": "Coming soon"
-}
+[
+	{
+		"id": 2,
+		"build_id": 1,
+		"repo_id": 1,
+		"number": 2,
+		"name": "build",
+		"status": "success",
+		"error": "",
+		"exit_code": 0,
+		"created": 1563475419,
+		"started": 1563475420,
+		"finished": 1563475421,
+	},
+	{
+		"id": 1,
+		"build_id": 1,
+		"repo_id": 1,
+		"number": 1,
+		"name": "clone",
+		"status": "success",
+		"error": "",
+		"exit_code": 0,
+		"created": 1563475419,
+		"started": 1563475420,
+		"finished": 1563475421,
+	}
+]
 ```

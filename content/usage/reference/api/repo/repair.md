@@ -1,23 +1,21 @@
 ---
-title: "Remove"
-linkTitle: "Remove"
-weight: 35
+title: "Repair"
+linkTitle: "Repair"
+weight: 20
 description: >
-  Learn how to  remove a service.
+  Learn how to  repair a repo.
 ---
 
 ## Endpoint
 
 ```
-DELETE /api/v1/repos/:org/:repo/builds/:build/services/:service
+PATCH /api/v1/repos/:org/:repo/repair
 ```
 
 | Param | Description |
 |---|---|
 | org | Name of a organtization. |
 | repo | Name of a repository. |
-| build | Number of build. |
-| service | Number of service. |
 
 ## Permissions
 
@@ -33,5 +31,5 @@ Documentation Coming Soon!
 ## Example Response Body
 
 ```
-service github/octokitty/1/1 removed`
+repo github/octokitty repaired
 ```

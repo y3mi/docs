@@ -3,20 +3,19 @@ title: "Remove"
 linkTitle: "Remove"
 weight: 35
 description: >
-  Learn how to use the API to remove a repo.
+  Learn how to  remove a repo.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+DELETE /api/v1/repos/:org/:repo
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of a organtization. |
+| repo | Name of a repository. |
 
 ## Permissions
 
@@ -26,12 +25,11 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
-```json
-{
-  "docs": "Coming soon"
-}
+```
+removed github/octokitty
 ```
