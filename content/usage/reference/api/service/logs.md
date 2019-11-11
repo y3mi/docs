@@ -3,7 +3,7 @@ title: "Logs"
 linkTitle: "Logs"
 weight: 20
 description: >
-  Learn how to  view service logs.
+  Learn how to view service logs.
 ---
 
 ## Endpoint

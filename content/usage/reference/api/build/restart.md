@@ -3,7 +3,7 @@ title: "Restart"
 linkTitle: "Restart"
 weight: 25
 description: >
-  Learn how to  restart a build.
+  Learn how to restart a build.
 ---
 
 ## Endpoint

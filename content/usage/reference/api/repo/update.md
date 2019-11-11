@@ -3,7 +3,7 @@ title: "Update"
 linkTitle: "Update"
 weight: 30
 description: >
-  Learn how to  update a repo.
+  Learn how to update a repo.
 ---
 
 ## Endpoint

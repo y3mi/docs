@@ -3,7 +3,7 @@ title: "Remove"
 linkTitle: "Remove"
 weight: 35
 description: >
-  Learn how to  remove a step.
+  Learn how to remove a step.
 ---
 
 ## Endpoint

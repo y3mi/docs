@@ -3,7 +3,7 @@ title: "Create"
 linkTitle: "Create"
 weight: 5
 description: >
-  Learn how to  create a build.
+  Learn how to create a build.
 ---
 
 ## Endpoint

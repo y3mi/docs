@@ -3,7 +3,7 @@ title: "Chown"
 linkTitle: "Chown"
 weight: 20
 description: >
-  Learn how to  change ownership on a repo.
+  Learn how to change ownership on a repo.
 ---
 
 ## Endpoint

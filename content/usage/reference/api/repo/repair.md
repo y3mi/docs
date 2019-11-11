@@ -3,7 +3,7 @@ title: "Repair"
 linkTitle: "Repair"
 weight: 20
 description: >
-  Learn how to  repair a repo.
+  Learn how to repair a repo.
 ---
 
 ## Endpoint

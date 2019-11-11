@@ -3,7 +3,7 @@ title: "Update"
 linkTitle: "Update"
 weight: 30
 description: >
-  Learn how to  update a build.
+  Learn how to update a build.
 ---
 
 ## Endpoint

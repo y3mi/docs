@@ -3,7 +3,7 @@ title: "Logs"
 linkTitle: "Logs"
 weight: 20
 description: >
-  Learn how to  view build logs.
+  Learn how to view build logs.
 ---
 
 ## Endpoint

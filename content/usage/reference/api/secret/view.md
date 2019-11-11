@@ -3,7 +3,7 @@ title: "View"
 linkTitle: "View"
 weight: 15
 description: >
-  Learn how to  view a secret.
+  Learn how to view a secret.
 ---
 
 ## Endpoint

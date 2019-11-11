@@ -3,7 +3,7 @@ title: "View"
 linkTitle: "View"
 weight: 15
 description: >
-  Learn how to  view a service.
+  Learn how to view a service.
 ---
 
 ## Endpoint
