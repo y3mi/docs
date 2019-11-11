@@ -14,8 +14,8 @@ n/a
 
 | Key | Required | Explanation |
 |---|---|
-| `entrypoint` | N | overwrite default container executable.  |
-| `environment` | N | environment varibles to be added at runtime. |
-| `image` | Y | name of the Docker image. |
-| `name` | Y | name of the service. |
-| `ports` | N | specifiy the port container will listen on. |
+| `entrypoint` | N | overwrite default container executable  |
+| `environment` | N | environment varibles to be added at runtime |
+| `image` | Y | name of the Docker image |
+| `name` | Y | name of the service |
+| `ports` | N | specifiy the port container will listen on |

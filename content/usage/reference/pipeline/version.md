@@ -14,4 +14,4 @@ n/a
 
 | Key | Required | Explanation |
 |---|---|
-| `version` | Y | version of the file to use for compiling.  |
+| `version` | Y | version of the file to use for compiling  |

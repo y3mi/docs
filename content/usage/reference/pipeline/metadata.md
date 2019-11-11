@@ -14,4 +14,4 @@ n/a
 
 | Key | Required | Explanation |
 |---|---|
-| `template` | N | used to idenitify if pipeline should be compiled as a template. (default: `false`) |
+| `template` | N | used to idenitify if pipeline should be compiled as a template (default: `false`) |

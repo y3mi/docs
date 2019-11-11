@@ -16,10 +16,10 @@ n/a
 
 | Key | Required | Explanation |
 |---|---|
-| `continue` | N | set `true` to continue steps on failure. (Default: `false`)  |
-| `if` | N | used in conjunction with rules.  |
-| `operator` | N | control and/or operator logic with rulesets. (Default: `and`) |
-| `unless` | N | used in conjunction with rules.  |
+| `continue` | N | set `true` to continue steps on failure (Default: `false`)  |
+| `if` | N | used in conjunction with rules  |
+| `operator` | N | control and/or operator logic with rulesets (Default: `and`) |
+| `unless` | N | used in conjunction with rules  |
 
 #### rule keys
 
