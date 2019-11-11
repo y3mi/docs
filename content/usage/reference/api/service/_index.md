@@ -1,9 +1,9 @@
 ---
 title: "Service"
 linkTitle: "Service"
-weight: 15
+weight: 25
 description: >
-  Learn how to use the API to use API endpoints for service resources.
+  Learn how to use API endpoints for service resources.
 ---
 
 Documentation Coming Soon!

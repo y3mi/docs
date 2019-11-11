@@ -3,20 +3,21 @@ title: "Remove"
 linkTitle: "Remove"
 weight: 35
 description: >
-  Learn how to use the API to remove a secret.
+  Learn how to remove a secret.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+DELETE /api/v1/secrets/:engine/:type/:org/:name/:secret
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| engine | Name of engine. |
+| type | Name of type. |
+| org | Name of organization. |
+| name | Name of repository or team. |
 
 ## Permissions
 
@@ -26,12 +27,11 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
-{
-  "docs": "Coming soon"
-}
+secret foobar removed
 ```

@@ -1,9 +1,9 @@
 ---
 title: "Step"
 linkTitle: "Step"
-weight: 15
+weight: 20
 description: >
-  Learn how to use the API to use API endpoints for step resources.
+  Learn how to use API endpoints for step resources.
 ---
 
 Documentation Coming Soon!

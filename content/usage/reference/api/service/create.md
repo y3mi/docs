@@ -3,20 +3,20 @@ title: "Create"
 linkTitle: "Create"
 weight: 5
 description: >
-  Learn how to use the API to create a service.
+  Learn how to create a service.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+POST /api/v1/repos/:org/:repo/builds/:build/services
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of organization. |
+| repo | Name of repository. |
+| build | Number of build. |
 
 ## Permissions
 
@@ -26,12 +26,23 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
 {
-  "docs": "Coming soon"
+	"id": 1,
+	"build_id": 1,
+	"repo_id": 1,
+	"number": 1,
+	"name": "clone",
+	"status": "success",
+	"error": "",
+	"exit_code": 0,
+	"created": 1563475419,
+	"started": 1563475420,
+	"finished": 1563475421,
 }
 ```

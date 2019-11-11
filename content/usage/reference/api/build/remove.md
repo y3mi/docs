@@ -3,20 +3,20 @@ title: "Remove"
 linkTitle: "Remove"
 weight: 35
 description: >
-  Learn how to use the API to remove a build.
+  Learn how to remove a build.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+DELETE /api/v1/repos/:org/:repo/builds/:build
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of organization. |
+| repo | Name of repository. |
+| build | Number of build. |
 
 ## Permissions
 
@@ -26,12 +26,11 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
-```json
-{
-  "docs": "Coming soon"
-}
+```
+build github/octokitty/1 removed
 ```

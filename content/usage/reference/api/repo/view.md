@@ -3,20 +3,19 @@ title: "View"
 linkTitle: "View"
 weight: 15
 description: >
-  Learn how to use the API to view a repo.
+  Learn how to view a repo.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/repos/:org/:repo
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| org | Name of organization. |
+| repo | Name of repository. |
 
 ## Permissions
 
@@ -26,12 +25,29 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
 {
-  "docs": "Coming soon"
+		"id": 1,
+		"user_id": 1,
+		"org": "github",
+		"name": "octocat",
+		"full_name": "github/octocat",
+		"link": "https://github.com/github/octocat",
+		"clone": "https://github.com/github/octocat",
+		"branch": "master",
+		"timeout": 60,
+		"visibility": "public",
+		"private": false,
+		"trusted": true,
+		"active": true,
+		"allow_pr": false,
+		"allow_push": true,
+		"allow_deploy": false,
+		"allow_tag": false
 }
 ```

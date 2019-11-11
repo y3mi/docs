@@ -3,20 +3,21 @@ title: "Get"
 linkTitle: "Get"
 weight: 10
 description: >
-  Learn how to use the API to get secrets.
+  Learn how to get secrets.
 ---
 
 ## Endpoint
 
 ```
-/docs/coming/{soon}
+GET /api/v1/secrets/:engine/:type/:org/:name
 ```
 
 | Param | Description |
 |---|---|
-
-
-`{soon}` - documentation coming soon
+| engine | Name of engine. |
+| type | Name of type. |
+| org | Name of organization. |
+| name | Name of repository or team. |
 
 ## Permissions
 
@@ -26,12 +27,57 @@ Documentation Coming Soon!
 
 | Status Code | Description |
 |---|---|
-| 200 | Everything looks good! |
+| 200 | Indicates the request has succeeded. |
+| 401 | Indicates the user does not have proper permissions. |
 
 ## Example Response Body
 
 ```json
-{
-  "docs": "Coming soon"
-}
+[
+	{
+		"id": 1,
+		"org": "github",
+		"repo": "octocat",
+		"team": "",
+		"name": "foo",
+		"value": "",
+		"type": "repo",
+		"images": [
+			"alpine"
+		],
+		"events": [
+			"push"
+		]
+	},
+	{
+		"id": 2,
+		"org": "github",
+		"repo": "*",
+		"team": "",
+		"name": "foo",
+		"value": "",
+		"type": "org",
+		"images": [
+			"alpine"
+		],
+		"events": [
+			"push"
+		]
+	},
+	{
+		"id": 3,
+		"org": "github",
+		"repo": "",
+		"team": "octokitties",
+		"name": "foo",
+		"value": "",
+		"type": "shared",
+		"images": [
+			"alpine"
+		],
+		"events": [
+			"push"
+		]
+	}
+]
 ```
