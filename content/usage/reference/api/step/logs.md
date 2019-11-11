@@ -9,7 +9,7 @@ description: >
 ## Endpoint
 
 ```
-GET /api/v1/repos/:org/:repo/builds/:build/steps/:step
+GET /api/v1/repos/:org/:repo/builds/:build/steps/:step/logs
 ```
 
 | Param | Description |
