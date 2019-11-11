@@ -1,6 +1,6 @@
 <div>
     <div class="search -sidebar" id="search2">
-        <input type="text" placeholder="Search site..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+        <input type="text" placeholder="Search site..." v-model="txt" @blur="close()" maxlength="50">
         <div class="search-results" :style="{'display': showresult?'block':'none'}">
             <a v-for="item in result" :href="item.url">{{ printf "{{ item.display }}" }}</a>
         </div>
@@ -10,6 +10,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
 <script>
     let mounted_sidebar = function() {
+        window.addEventListener("keyup", e => {
+            this.txt = e.target.value;
+            this.search();
+        });
         axios.get('{{ with .Site.GetPage "/search.md" }}{{ .Permalink }}{{ end }}')
             .then(function(response) {
                 vuesearch2.bdd = response.data.results;

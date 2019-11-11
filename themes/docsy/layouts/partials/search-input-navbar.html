@@ -2,7 +2,7 @@
     <!-- Static Site Search Vue Components -->
 
     <div class="search -navbar" id="search1">
-        <input type="text" placeholder="Search site..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+        <input type="text" placeholder="Search site..." v-model="txt" @blur="close()" maxlength="50">
         <div class="search-results" :style="{'display': showresult?'block':'none'}">
             <a v-for="item in result" :href="item.url">{{ printf "{{ item.display }}" }}</a>
         </div>
@@ -11,6 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
     <script>
         let mounted = function() {
+            // add an event listener for mobile
+            window.addEventListener("keyup", e => {
+                this.txt = e.target.value;
+                this.search();
+            });
             // loading the full JSON to 'bdd'
             axios.get('{{ with .Site.GetPage "/search.md" }}{{ .Permalink }}{{ end }}')
                 .then(function(response) {
@@ -63,7 +68,7 @@
                 vuesearch1.result = resultmp.slice();
             });
             this.result = this.result.slice(0, 10); // 10 results max
-            this.result = this.result.sort(function (a, b) {
+            this.result = this.result.sort(function(a, b) {
                 return ('' + a.display).localeCompare(b.display);
             })
             this.showresult = (this.result.length > 0);
