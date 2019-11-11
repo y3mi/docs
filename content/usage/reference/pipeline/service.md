@@ -12,7 +12,7 @@ n/a
 
 ## Key Appendix
 
-| Key | Explanation |
+| Key | Required | Explanation |
 |---|---|
 | `entrypoint` | N | overwrite default container executable.  |
 | `environment` | N | environment varibles to be added at runtime. |

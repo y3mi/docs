@@ -12,7 +12,7 @@ n/a
 
 ## Key Appendix
 
-| Key | Explanation |
+| Key | Required | Explanation |
 |---|---|
 | `name` | Y | name of the template. |
 | `source` | Y | path of the template including source address. (i.e. github.com/github/octocat/.vela/template.yml) |

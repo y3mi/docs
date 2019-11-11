@@ -12,6 +12,6 @@ n/a
 
 ## Key Appendix
 
-| Key | Explanation |
+| Key | Required | Explanation |
 |---|---|
 | `version` | Y | version of the file to use for compiling.  |

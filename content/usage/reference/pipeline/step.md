@@ -12,7 +12,7 @@ n/a
 
 ## Key Appendix
 
-| Key | Explanation |
+| Key | Required | Explanation |
 |---|---|
 | `commands` | N | specifiy the commands to be run inside step. |
 | `detach` | N | specifiy if the container should detach as a service. |
