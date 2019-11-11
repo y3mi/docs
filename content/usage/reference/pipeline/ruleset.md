@@ -27,11 +27,12 @@ _All keys are array types_
 
 | Key | Required | Explanation |
 |---|---|
-| `branch` | N | name or regex for branches |
+| `branch` | N | name or glob match for branches |
 | `event` | N | type of events  |
 | `path` | N | files or paths within repo |
+| `repo` | N | name or glob match for repositories |
 | `status` | N | type of status |
-| `tag` | N | name or regex for tags |
+| `tag` | N | name or glob match for tags |
 
 ##### event options
 
