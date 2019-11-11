@@ -3,7 +3,7 @@ title: "Get"
 linkTitle: "Get"
 weight: 10
 description: >
-  Learn how to  get builds.
+  Learn how to get builds.
 ---
 
 ## Endpoint
@@ -14,7 +14,7 @@ GET /api/v1/repos/:org/:repo/builds
 
 | Param | Description |
 |---|---|
-| org | Name of a organtization. |
+| org | Name of a organization. |
 | repo | Name of a repository. |
 
 ## Permissions

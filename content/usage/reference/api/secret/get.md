@@ -3,7 +3,7 @@ title: "Get"
 linkTitle: "Get"
 weight: 10
 description: >
-  Learn how to  get secrets.
+  Learn how to get secrets.
 ---
 
 ## Endpoint
@@ -16,7 +16,7 @@ GET /api/v1/secrets/:engine/:type/:org/:name
 |---|---|
 | engine | Name of a engine. |
 | type | Name of the type. |
-| org | Name of a organtization. |
+| org | Name of a organization. |
 | name | Name of a repository or team. |
 
 ## Permissions

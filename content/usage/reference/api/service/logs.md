@@ -14,7 +14,7 @@ GET /api/v1/repos/:org/:repo/builds/:build/services/:service/logs
 
 | Param | Description |
 |---|---|
-| org | Name of a organtization. |
+| org | Name of a organization. |
 | repo | Name of a repository. |
 | build | Number of build. |
 | service | Number of service. |

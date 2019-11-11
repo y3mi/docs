@@ -3,7 +3,7 @@ title: "Get"
 linkTitle: "Get"
 weight: 10
 description: >
-  Learn how to  get repos.
+  Learn how to get repos.
 ---
 
 ## Endpoint

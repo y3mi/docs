@@ -14,7 +14,7 @@ DELETE /api/v1/repos/:org/:repo/builds/:build/steps/:step
 
 | Param | Description |
 |---|---|
-| org | Name of a organtization. |
+| org | Name of a organization. |
 | repo | Name of a repository. |
 | build | Number of build. |
 | step | Number of step. |

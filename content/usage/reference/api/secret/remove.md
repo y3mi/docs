@@ -16,7 +16,7 @@ DELETE /api/v1/secrets/:engine/:type/:org/:name/:secret
 |---|---|
 | engine | Name of a engine. |
 | type | Name of the type. |
-| org | Name of a organtization. |
+| org | Name of a organization. |
 | name | Name of a repository or team. |
 | secret | Name of the secret. |
 
