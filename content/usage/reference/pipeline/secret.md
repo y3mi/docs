@@ -36,10 +36,10 @@ secrets:
 
 | Key | Value | Explanation |
 |---|---|---|
-| `engine` | `native` | secret backend the agent uses to lookup the secret (default: `native`) |
+| `engine` | `native` | secret backend the worker uses to lookup the secret (default: `native`) |
 | `key` | `docker_username` | key to the secret variable to lookup from the secret backend (default: secret `name`)|
 | `name` | `docker_username` | name of the secret variable to be injected into the build |
-| `type` | `repository` | secret type the agent uses to lookup the secret (default: `repository`) |
+| `type` | `repository` | secret type the worker uses to lookup the secret (default: `repository`) |
 
 #### Engine Options
 

@@ -58,7 +58,7 @@ exitcode: 0
 created: 1561748980
 started: 1561748979
 finished: 1561748981
-host: "agent.host.com"
+host: "worker.host.com"
 runtime: "docker"
 distribution: "linux"
 ```

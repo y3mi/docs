@@ -13,7 +13,7 @@ n/a
 ## Key Appendix
 
 | Key | Required | Explanation |
-|---|---|
+|---|---|---|
 | `entrypoint` | N | overwrite default container executable  |
 | `environment` | N | environment varibles to be added at runtime |
 | `image` | Y | name of the Docker image |
