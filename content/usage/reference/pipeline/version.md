@@ -6,4 +6,12 @@ description: >
   Reference for yaml keys that can used for version.
 ---
 
-Documentation Coming Soon!
+## Defaults
+
+n/a
+
+## Key Appendix
+
+| Key | Explanation |
+|---|---|
+| `version` | Y | version of the file to use for compiling.  |

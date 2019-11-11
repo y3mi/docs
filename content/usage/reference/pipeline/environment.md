@@ -6,6 +6,10 @@ description: >
   Reference for variables that are injected into a pipeline.
 ---
 
+## Defaults
+
+All environment variables specified in tables below are injected into every step.
+
 #### Build Environment Variables
 
 | Key | Value | Explanation |
@@ -59,7 +63,3 @@ _`BUILD_TAG` is only populated during tag events._
 | `REPOSITORY_PRIVATE` | `false` | privacy setting for the repository |
 | `REPOSITORY_TIMEOUT` | `60` | timeout setting for the repository |
 | `REPOSITORY_TRUSTED` | `false` | trusted setting for the repository |
-
-## Defaults
-
-All environment variables specified in tables above are injected into every step.

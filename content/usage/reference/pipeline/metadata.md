@@ -6,4 +6,12 @@ description: >
   Reference for yaml keys that can used for metadata.
 ---
 
-Documentation Coming Soon!
+## Defaults
+
+n/a
+
+## Key Appendix
+
+| Key | Explanation |
+|---|---|
+| `template` | N | used to idenitify if pipeline should be compiled as a template. (default: `false`) |
