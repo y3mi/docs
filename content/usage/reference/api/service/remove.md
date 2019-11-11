@@ -33,5 +33,5 @@ Documentation Coming Soon!
 ## Example Response Body
 
 ```
-service github/octokitty/1/1 removed`
+service github/octokitty/1/1 removed
 ```
