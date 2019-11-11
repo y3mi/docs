@@ -68,7 +68,7 @@
                 vuesearch1.result = resultmp.slice();
             });
             this.result = this.result.slice(0, 10); // 10 results max
-            this.result = this.result.sort(function(a, b) {
+            this.result = this.result.sort(function (a, b) {
                 return ('' + a.display).localeCompare(b.display);
             })
             this.showresult = (this.result.length > 0);
