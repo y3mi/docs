@@ -68,7 +68,7 @@ author: SimonOxley
 branch: master
 ref: refs/heads/master
 baseref: ""
-host: "agent.host.com"
+host: "worker.host.com"
 runtime: "docker"
 distribution: "linux"
 ```

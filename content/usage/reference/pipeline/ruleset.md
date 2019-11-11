@@ -15,7 +15,7 @@ n/a
 #### ruleset keys
 
 | Key | Required | Explanation |
-|---|---|
+|---|---|---|
 | `continue` | N | set `true` to continue steps on failure (Default: `false`)  |
 | `if` | N | used in conjunction with rules  |
 | `operator` | N | control and/or operator logic with rulesets (Default: `and`) |
@@ -26,7 +26,7 @@ n/a
 _All keys are array types_
 
 | Key | Required | Explanation |
-|---|---|
+|---|---|---|
 | `branch` | N | name or glob match for branches |
 | `event` | N | type of events  |
 | `path` | N | files or paths within repo |

@@ -8,7 +8,7 @@ description: >
 
 ## Defaults
 
-All environment variables specified in tables below are injected into every step.
+All environment variables specified in the tables below are injected into every step.
 
 #### Build Environment Variables
 
@@ -21,7 +21,7 @@ All environment variables specified in tables below are injected into every step
 | `BUILD_ENQUEUED` | `1556730001` | unix timestamp representing build enqueue time |
 | `BUILD_EVENT` | `push` | webhook event that triggered the build |
 | `BUILD_FINISHED` | `1556730045` | unix timestamp representing build completion time |
-| `BUILD_HOST` | `vela-agent-1` | fully qualified domain name of the agent the build was executed on |
+| `BUILD_HOST` | `vela-worker-1` | fully qualified domain name of the worker the build was executed on |
 | `BUILD_MESSAGE` | `New line at end of file.` | message from the source commit |
 | `BUILD_NUMBER` | `1` | build number |
 | `BUILD_PARENT` | `1` | previous build number |
@@ -42,7 +42,7 @@ _`BUILD_TAG` is only populated during tag events._
 | `VELA_ADDR` | `vela-server.company.com` | fully qualified domain name of the Vela server |
 | `VELA_CHANNEL` | `vela` | queue channel the build was published to |
 | `VELA_DATABASE` | `postgres` | database Vela is connected to |
-| `VELA_HOST` | `vela-agent-1` | fully qualified domain name of the agent the build was executed on |
+| `VELA_HOST` | `vela-worker-1` | fully qualified domain name of the worker the build was executed on |
 | `VELA_QUEUE` | `redis` | queue build was published to |
 | `VELA_RUNTIME` | `docker` | runtime environment build was executed in |
 | `VELA_SOURCE` | `https://github.com` | queue channel the build was published to |
