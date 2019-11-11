@@ -14,8 +14,8 @@ PATCH /api/v1/repos/:org/:repo/repair
 
 | Param | Description |
 |---|---|
-| org | Name of a organization. |
-| repo | Name of a repository. |
+| org | Name of organization. |
+| repo | Name of repository. |
 
 ## Permissions
 

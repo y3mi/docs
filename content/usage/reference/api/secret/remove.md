@@ -14,11 +14,10 @@ DELETE /api/v1/secrets/:engine/:type/:org/:name/:secret
 
 | Param | Description |
 |---|---|
-| engine | Name of a engine. |
-| type | Name of the type. |
-| org | Name of a organization. |
-| name | Name of a repository or team. |
-| secret | Name of the secret. |
+| engine | Name of engine. |
+| type | Name of type. |
+| org | Name of organization. |
+| name | Name of repository or team. |
 
 ## Permissions
 

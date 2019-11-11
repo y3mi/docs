@@ -14,8 +14,8 @@ POST /api/v1/repos/:org/:repo/builds/:build/services
 
 | Param | Description |
 |---|---|
-| org | Name of a organization. |
-| repo | Name of a repository. |
+| org | Name of organization. |
+| repo | Name of repository. |
 | build | Number of build. |
 
 ## Permissions

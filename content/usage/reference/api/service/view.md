@@ -14,6 +14,10 @@ GET /api/v1/repos/:org/:repo/builds/:build/services/:service
 
 | Param | Description |
 |---|---|
+| org | Name of organization. |
+| repo | Name of repository. |
+| build | Number of build. |
+| service | Number of service. |
 
 
 `{soon}` - documentation coming soon
