@@ -31,21 +31,21 @@ We are always welcome to new PRs! You can follow the below guide for learning ho
 
 ```bash
 # Clone the project
-git clone git@github.com:go-vela/site.git $HOME/go-vela/site
+git clone git@github.com:go-vela/docs.git $HOME/go-vela/docs
 ```
 
 * Navigate to the repository code:
 
 ```bash
 # Change into the project directory
-cd $HOME/go-vela/site
+cd $HOME/go-vela/docs
 ```
 
 * Point the original code at your fork:
 
 ```bash
 # Add a remote branch pointing to your fork
-git remote add fork https://github.com/your_fork/worker
+git remote add fork https://github.com/your_fork/docs
 ```
 
 ## Running the website locally
