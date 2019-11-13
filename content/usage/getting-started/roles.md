@@ -1,10 +1,10 @@
-:---:
+---
 title: "Roles"
 linkTitle: "Roles"
 weight: 2
 description: >
   Learn about the authorization roles.
-:---:
+---
 
 {{% alert title="Warning" color="warning" %}}
 At this time the only Source Control Provider is GitHub. So this documentation is tailored for those users.
