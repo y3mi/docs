@@ -34,28 +34,25 @@ Admins within the GitHub organization have the option to use GitHub orgs to allo
 
 The **admin** role enables full access to the repository which grants the following access levels for resources:
 
-* Build: Read/Write
-* Log: Read/Write
-* Repository: Read/Write
-* Secret: Read/Write
-* Step: Read/Write
+| Access | Repo | Build | Step | Service | Log | Secret  |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Write | Y | N | N | N | N | Y |
+| Read | Y | Y | Y | Y | Y | Y |
 
 #### Write
 
 The **write** role enables read and write access to the repository which grants the following access levels for resources:
 
-* Build: Read/Write
-* Log: Read/Write
-* Repository: Read
-* Secret: None
-* Step: Read/Write
+| Access | Repo | Build | Step | Service | Log | Secret  |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Write | Y | N | N | N | N | N |
+| Read | Y | Y | Y | Y | Y | N |
 
 #### Read
 
 The **read** role enables read access to the repository which grants the following access levels for resources:
 
-* Build: Read
-* Log: Read
-* Repository: Read
-* Secret: None
-* Step: Read
+| Access | Repo | Build | Step | Service | Log | Secret  |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Write | N | N | N | N | N | N |
+| Read | Y | Y | Y | Y | Y | N |
