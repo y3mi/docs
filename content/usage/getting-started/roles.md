@@ -1,7 +1,7 @@
 ---
 title: "Roles"
 linkTitle: "Roles"
-weight: 10
+weight: 2
 description: >
   Learn about the authorization roles.
 ---
