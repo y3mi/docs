@@ -25,7 +25,7 @@ Generate the configuration file:
 vela generate config --addr https://vela-api.company.com --token <personal token>
 ```
 
-The default path for this configuration file can be found @ `/Users/<lan_id>/.vela/config.yml`.
+The default path for this configuration file can be found @ `~/.vela/config.yml`.
 
 _To see the file config file reference see the [config section](/vela/doc-site/reference/cli/config)._
 
