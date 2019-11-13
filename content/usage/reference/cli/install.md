@@ -28,7 +28,7 @@ brew install vela
 
 ```sh
 # download the binary
-curl -L https://github.com/go-vela/cli/releases/download/v0.1.0/vela_darwin_amd64.tar.gz | tar zx
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.4/vela_darwin_amd64.tar.gz | tar zx
 
 # copy binary to $PATH
 sudo cp vela /usr/local/bin/
@@ -40,7 +40,7 @@ sudo cp vela /usr/local/bin/
 
 ```sh
 # download the binary
-curl -L https://github.com/go-vela/cli/releases/download/v0.1.0/vela_linux_amd64.tar.gz | tar zx
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.4/vela_linux_amd64.tar.gz | tar zx
 
 # copy binary to $PATH
 sudo cp vela /usr/local/bin/
@@ -52,7 +52,7 @@ sudo cp vela /usr/local/bin/
 
 ```sh
 # download the binary
-curl -L https://github.com/go-vela/cli/releases/download/v0.1.0/vela_windows_amd64.tar.gz | tar zx
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.4/vela_windows_amd64.tar.gz | tar zx
 
 # copy binary to $PATH
 sudo cp vela C:\Windows\System32
