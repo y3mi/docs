@@ -19,10 +19,10 @@ Log in and capture the personal token:
 vela --addr https://vela-api.company.com login
 ```
 
-Create the configuration file:
+Generate the configuration file:
 
 ```sh
-vela create config --addr https://vela-api.company.com --token <personal token>
+vela generate config --addr https://vela-api.company.com --token <personal token>
 ```
 
 The default path for this configuration file can be found @ `/Users/<lan_id>/.vela/config.yml`.
