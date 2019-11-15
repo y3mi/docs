@@ -51,11 +51,11 @@ EXAMPLES:
 ## Sample
 
 ```sh
-$ vela view secret --engine native --type repository --org github --repo octocat --name foo
+$ vela view secret --engine native --type repo --org github --repo octocat --name foo
 
 id: 1
-organization: github
-repository: octocat
+org: github
+repo: octocat
 team: ""
 name: foo
 value: ""

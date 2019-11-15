@@ -15,11 +15,11 @@ version: "1"
 +  - name: docker_username
 +    key:  docker_username
 +    engine: native
-+    type: repository
++    type: repo
 +  - name: docker_password
 +    key:  docker_password
 +    engine: native
-+    type: repository
++    type: repo
 ```
 
 This top level declaration then allows injection of these secret variables into the environment for the provided build step(s). The step(s) request access to these variables using the same `secrets` declaration which injects the variables into the runtime environment as all upper case variables.
@@ -37,11 +37,11 @@ secrets:
   - name: docker_username
     key:  docker_username
     engine: native
-    type: repository
+    type: repo
   - name: docker_password
     key:  docker_password
     engine: native
-    type: repository
+    type: repo
 ```
 
 ### Alternate Names
