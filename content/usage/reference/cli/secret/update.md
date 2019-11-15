@@ -52,7 +52,7 @@ EXAMPLES:
  6. Update a secret for a repository with an image whitelist.
     $ vela update secret --engine native --type repo --org github --repo octocat --name foo --image alpine --image golang
  7. Update a repo secret value with default native engine or when engine and type environment variables are set.
-  $ vela update secret --org github --repo octocat --name foo --value bars'
+  $ vela update secret --org github --repo octocat --name foo --value bars
  8. Update with data from a secret file.
   $ vela update secret -f secret.yml
 ```
@@ -70,23 +70,23 @@ secret "foo" was updated
 Vela supports updating a single-line or multi-line secret saved in a file.
 
 #### Examples
-_Example CLI command for repository secret type_
+_Example CLI command for repo secret type_
 ```sh
-$ vela update secret --engine native --type repository --org github --repo octocat --name foo --value @/path/to/file
+$ vela update secret --engine native --type repo --org github --repo octocat --name foo --value @/path/to/file
 
-$ vela update secret --engine native --type repository --org github --repo octocat --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela update secret --engine native --type repo --org github --repo octocat --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```
 
-_Example CLI command for organization secret type_
+_Example CLI command for org secret type_
 ```sh
-$ vela update secret --engine native --type organization --org github --repo '*' --name foo --value @/path/to/file
+$ vela update secret --engine native --type org --org github --repo '*' --name foo --value @/path/to/file
 
-$ vela update secret --engine native --type repository --org github --repo '*' --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela update secret --engine native --type org --org github --repo '*' --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```
 
 _Example CLI command for shared secret type_
 ```sh
 $ vela update secret --engine native --type shared --org github --team foobar --name foo --value @/path/to/file
 
-$ vela update secret --engine native --type shared --org github --team foobar --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela update secret --engine native --type shared --org github --team foobar --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```

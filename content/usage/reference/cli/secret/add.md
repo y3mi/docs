@@ -60,7 +60,7 @@ EXAMPLES:
 ## Sample
 
 ```sh
-$ vela add secret --engine native --type repository --event push --event pull_request --org github --repo octocat --name foo --value bar
+$ vela add secret --engine native --type repo --event push --event pull_request --org github --repo octocat --name foo --value bar
 
 secret "foo" was addd
 ```
@@ -70,30 +70,30 @@ secret "foo" was addd
 Vela supports creating a single-line or multi-line secret saved in a file.
 
 #### Examples
-_Example CLI command for repository secret type_
+_Example CLI command for repo secret type_
 ```sh
-$ vela add secret --engine native --type repository --org github --repo octocat --name foo --value @/path/to/file
+$ vela add secret --engine native --type repo --org github --repo octocat --name foo --value @/path/to/file
 
-$ vela add secret --engine native --type repository --org github --repo octocat --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela add secret --engine native --type repo --org github --repo octocat --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```
 
-_Example CLI command for organization secret type_
+_Example CLI command for org secret type_
 ```sh
-$ vela add secret --engine native --type organization --org github --repo '*' --name foo --value @/path/to/file
+$ vela add secret --engine native --type org --org github --repo '*' --name foo --value @/path/to/file
 
-$ vela add secret --engine native --type repository --org github --repo '*' --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela add secret --engine native --type org --org github --repo '*' --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```
 
 _Example CLI command for shared secret type_
 ```sh
 $ vela add secret --engine native --type shared --org github --team foobar --name foo --value @/path/to/file
 
-$ vela add secret --engine native --type shared --org github --team foobar --name foo --value @/Users/z123456/some_directory/secret_file_bar.txt
+$ vela add secret --engine native --type shared --org github --team foobar --name foo --value @$HOME/some_directory/secret_file_bar.txt
 ```
 
 ##### Advanced
 
-_Example CLI command for repository secret type_
+_Example CLI command for repo secret type_
 ```sh
 $ vela add secret -f secret.yml
 ```
@@ -106,8 +106,8 @@ metadata:
   api_version: v1
   engine: native
 secrets:
-  - organization: octocat
-    repository: github
+  - org: octocat
+    repo: github
     name: foo
     value: bar
     type: repo
@@ -116,7 +116,7 @@ secrets:
     events:
       - push
       - pull_request
-  - organization: github
+  - org: github
     team: octokitties
     name: foo1
     value: "@/path/to/file/bar1"
@@ -135,8 +135,8 @@ metadata:
   api_version: v1
   engine: native
 secrets:
-  - organization: github
-    repository: octocat
+  - org: github
+    repo: octocat
     name: foo
     value: bar
     type: repo
@@ -150,7 +150,7 @@ metadata:
   api_version: v1
   engine: vault
 secrets:
-  - organization: git
+  - org: git
     team: octokitties
     name: foo1
     value: "@/path/to/file/bar1"

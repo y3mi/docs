@@ -54,8 +54,8 @@ EXAMPLES:
 ## Sample
 
 ```sh
-$ vela get secret --engine native --type repository --org github --repo octocat
+$ vela get secret --engine native --type repo --org github --repo octocat
 
-NAME  ORG             TYPE        EVENTS
-foo   github/octocat  repository  push,pull_request
+NAME  ORG             TYPE  EVENTS
+foo   github/octocat  repo  push,pull_request
 ```

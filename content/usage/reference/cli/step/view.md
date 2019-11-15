@@ -49,7 +49,7 @@ $ vela view step --org github --repo octocat --build-number 5 --step-number 1
 
 id: 1
 buildid: 5
-repositoryid: 1
+repoid: 1
 number: 5
 name: clone
 status: success

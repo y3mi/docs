@@ -39,7 +39,7 @@ secrets:
 | `engine` | `native` | secret backend the worker uses to lookup the secret (default: `native`) |
 | `key` | `docker_username` | key to the secret variable to lookup from the secret backend (default: secret `name`)|
 | `name` | `docker_username` | name of the secret variable to be injected into the build |
-| `type` | `repository` | secret type the worker uses to lookup the secret (default: `repository`) |
+| `type` | `repo` | secret type the worker uses to lookup the secret (default: `repo`) |
 
 #### Engine Options
 
@@ -48,6 +48,6 @@ secrets:
 
 #### Type Options
 
-* `repository` - secrets that can only be used by a single repository
-* `organization` - secrets that can be used by any repository in a single organization
+* `repo` - secrets that can only be used by a single repository
+* `org` - secrets that can be used by any repository in a single organization
 * `shared` - secrets that can be used by any repository in any organization
