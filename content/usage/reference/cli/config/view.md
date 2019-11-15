@@ -36,7 +36,7 @@ EXAMPLES:
 ```sh
 $ vela view config
 
-addr: https://vela-api.company.com
+addr: https://vela-server.localhost
 token: qwerty123
 api-version: v1
 log-level: info

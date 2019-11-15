@@ -38,7 +38,7 @@ OPTIONS:
 ```sh
 EXAMPLES:
  1. Update CLI config with address.
-    $ vela update config --addr https://vela.company.com
+    $ vela update config --addr https://vela-server.localhost
  2. Update CLI config with personal token.
     $ vela update config --token fakeToken
  3. Update CLI config with specific API version.
@@ -52,7 +52,7 @@ EXAMPLES:
 ```sh
 $ vela update config --org github
 
-addr: https://vela-api.company.com
+addr: https://vela-server.localhost
 token: qwerty123
 api-version: v1
 log-level: info

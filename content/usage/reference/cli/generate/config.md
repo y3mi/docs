@@ -39,7 +39,7 @@ EXAMPLES:
  1. Generate CLI config from environment.
     $ vela generate config
  2. Generate CLI config with address and token.
-    $ vela generate config --addr https://vela.example.com --token fakeToken
+    $ vela generate config --addr https://vela-server.localhost --token fakeToken
  3. Generate CLI config with specific API version.
     $ vela generate config --api-version v1
  4. Generate CLI config with debug log level.
@@ -49,9 +49,9 @@ EXAMPLES:
 ## Sample
 
 ```sh
-$ vela generate config --addr https://vela-api.company.com --token qwerty123
+$ vela generate config --addr https://vela-server.localhost --token qwerty123
 
-addr: https://vela-api.company.com
+addr: https://vela-server.localhost
 token: qwerty123
 api-version: v1
 log-level: info
