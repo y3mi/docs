@@ -1,0 +1,305 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – CLI</title>
+    <link>https://go-vela.github.io/docs/usage/reference/cli/</link>
+    <description>Recent content in CLI on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/usage/reference/cli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Usage: Install</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/install/</guid>
+      <description>
+        
+        
+        
+
+&lt;p&gt;Instructions are OS-specific, please keep in mind the OS when referring to the installation instructions below.&lt;/p&gt;
+
+&lt;h3 id=&#34;macos&#34;&gt;MacOS&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34;&gt;brew&lt;/a&gt; is the recommend install path&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# add Vela tap to your brew configuration&lt;/span&gt;
+brew tap go-vela/vela
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# update your your taps&lt;/span&gt;
+brew update
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# install Vela CLI&lt;/span&gt;
+brew install vela&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&#34;curl&#34;&gt;cURL&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the binary&lt;/span&gt;
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.5/vela_darwin_amd64.tar.gz &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; tar zx
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# copy binary to $PATH&lt;/span&gt;
+sudo cp vela /usr/local/bin/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+
+&lt;h4 id=&#34;curl-1&#34;&gt;cURL&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the binary&lt;/span&gt;
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.5/vela_linux_amd64.tar.gz &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; tar zx
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# copy binary to $PATH&lt;/span&gt;
+sudo cp vela /usr/local/bin/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;microsoft-windows&#34;&gt;Microsoft Windows&lt;/h3&gt;
+
+&lt;h4 id=&#34;curl-2&#34;&gt;cURL&lt;/h4&gt;
+
+&lt;p&gt;Note: &lt;code&gt;curl&lt;/code&gt; must be installed differently&lt;/p&gt;
+
+&lt;h5 id=&#34;command-prompt&#34;&gt;Command Prompt&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the binary&lt;/span&gt;
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.5/vela_windows_amd64.tar.gz --output vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# unzipping the tarball&lt;/span&gt;
+tar xzvf vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# copy binary to $PATH&lt;/span&gt;
+copy vela C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#4e9a06&#34;&gt;\S&lt;/span&gt;ystem32/vela.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&#34;windows-powershell&#34;&gt;Windows PowerShell&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the binary&lt;/span&gt;
+curl https://github.com/go-vela/cli/releases/download/v0.1.5/vela_windows_amd64.tar.gz -OutFile vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# unzipping the tarball&lt;/span&gt;
+tar xzvf vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# copy binary to $PATH&lt;/span&gt;
+cp vela C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#4e9a06&#34;&gt;\S&lt;/span&gt;ystem32/vela.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&#34;powershell-6-powershell-core&#34;&gt;PowerShell 6 (PowerShell Core)&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the binary&lt;/span&gt;
+curl -L https://github.com/go-vela/cli/releases/download/v0.1.5/vela_windows_amd64.tar.gz --output vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# unzipping the tarball&lt;/span&gt;
+tar xzvf vela_windows_amd64.tar.gz
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# copy binary to $PATH&lt;/span&gt;
+cp vela C:&lt;span style=&#34;color:#4e9a06&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#4e9a06&#34;&gt;\S&lt;/span&gt;ystem32/vela.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;from-source&#34;&gt;From Source&lt;/h3&gt;
+
+&lt;p&gt;Source installation is intended &lt;strong&gt;only developers and advanced users&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you do not have a working Golang environment, please follow &lt;a href=&#34;https://golang.org/doc/install&#34; target=&#34;_blank&#34;&gt;How to install Golang&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# download the repo&lt;/span&gt;
+go get -d github.com/go-vela/cli
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# change to the cli directory&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;GOPATH&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;}&lt;/span&gt;/src/github.com/go-vela/cli
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# build a release binary with Go&lt;/span&gt;
+go build -o releases/vela
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# move binary to user directory for execution&lt;/span&gt;
+sudo mv releases/vela /usr/local/bin/vela&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Authentication</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/authentication/</guid>
+      <description>
+        
+        
+        
+
+&lt;p&gt;To authenticate with Vela, users need to provide the server address and personal token. There are three ways to provide the address and token to the CLI:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configuration File &lt;strong&gt;(recommended)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Environment Variables&lt;/li&gt;
+&lt;li&gt;Flags&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;configuration-file&#34;&gt;Configuration File&lt;/h3&gt;
+
+&lt;p&gt;Log in and capture the personal token:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Syntax&lt;/span&gt;
+vela --addr &amp;lt;vela server url&amp;gt; login
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Example&lt;/span&gt;
+vela --addr https://vela-server.localhost login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Generate the configuration file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Syntax&lt;/span&gt;
+vela generate config --addr &amp;lt;vela server url&amp;gt; --token &amp;lt;personal token&amp;gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Example&lt;/span&gt;
+vela generate config --addr https://vela-server.localhost --token qwerty123&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The default path for this configuration file can be found @ &lt;code&gt;~/.vela/config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;To see the file config file reference see the &lt;a href=&#34;https://go-vela.github.io/docs/vela/doc-site/reference/cli/config&#34;&gt;config section&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;environment-variables&#34;&gt;Environment Variables&lt;/h3&gt;
+
+&lt;p&gt;Configure the environment with the &lt;code&gt;VELA_ADDR&lt;/code&gt; environment variable:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;VELA_ADDR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;https://vela-server.localhost&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Log in and capture the personal token:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;vela login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Configure the environment with the &lt;code&gt;VELA_TOKEN&lt;/code&gt; environment variable:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;VELA_TOKEN&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&amp;lt;personal token&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It is recommended to add these to the terminal profile (&lt;code&gt;~/.bashrc&lt;/code&gt; or &lt;code&gt;~/.zshrc&lt;/code&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;flags&#34;&gt;Flags&lt;/h3&gt;
+
+&lt;p&gt;Log in and capture the personal token:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Syntax&lt;/span&gt;
+vela --addr &amp;lt;vela server url&amp;gt; login
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Example&lt;/span&gt;
+vela --addr https://vela-server.localhost login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pass the personal token as a flag argument:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Syntax&lt;/span&gt;
+vela --addr &amp;lt;vela server url&amp;gt; --token &amp;lt;personal token&amp;gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Example&lt;/span&gt;
+vela --addr https://vela-server.localhost --token qwerty123&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Validate</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/validate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/validate/</guid>
+      <description>
+        
+        
+        
+
+&lt;p&gt;To validate your vela yaml run &lt;code&gt;validate&lt;/code&gt; to ensure your pipeline is runnable.&lt;/p&gt;
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to validate your pipeline&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Validate the vela config in current directory.
+    $ vela validate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;vela validate
+
+&amp;quot;.vela.yml&amp;quot; is valid
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Generate</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/generate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/generate/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Config</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/config/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Repo</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/repo/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Build</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/build/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Step</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/step/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Service</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/service/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Log</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/log/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Secret</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/secret/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/secret/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

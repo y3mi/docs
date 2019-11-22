@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Registry</title>
+    <link>https://go-vela.github.io/docs/plugins/registry/</link>
+    <description>Recent content in Registry on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://go-vela.github.io/docs/plugins/registry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Plugins: Git</title>
+      <link>https://go-vela.github.io/docs/plugins/registry/git/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/plugins/registry/git/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Git plugin is automatically injected as the first step of your pipeline to clone your repo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/getting-started/what-is/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/authenticate/</loc>
+    <lastmod>2019-11-13T14:41:32-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/examples/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/install/getting-started/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/getting-started/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/examples/golang/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/image/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/registry/git/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/getting-started/how-to/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/examples/java/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/roles/</loc>
+    <lastmod>2019-11-17T22:46:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/ruleset/</loc>
+    <lastmod>2019-11-08T23:45:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/metadata/template/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/version/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/enable_repo/</loc>
+    <lastmod>2019-11-17T22:46:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/environment/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/metadata/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/examples/node/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/write_pipeline/</loc>
+    <lastmod>2019-11-20T14:49:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/add/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/add/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/authentication/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/generate/config/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/create/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/create/</loc>
+    <lastmod>2019-11-11T06:26:13-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/create/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/create/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/create/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/environment/</loc>
+    <lastmod>2019-11-21T09:19:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/build/get/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/service/get/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/step/get/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/install/</loc>
+    <lastmod>2019-11-11T13:31:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/install/</loc>
+    <lastmod>2019-11-17T22:46:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/install/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/stages/</loc>
+    <lastmod>2019-11-08T23:45:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/getting-started/start_build/</loc>
+    <lastmod>2019-11-17T22:46:06-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/config/view/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/log/view/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/workspace/</loc>
+    <lastmod>2019-11-21T09:19:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/parameters/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/secrets/</loc>
+    <lastmod>2019-11-22T14:12:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/authentication/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/authentication/</loc>
+    <lastmod>2019-11-08T23:45:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/pipeline/steps/commands/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/get/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/get/</loc>
+    <lastmod>2019-11-11T06:22:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/get/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/get/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/get/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/get/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/get/</loc>
+    <lastmod>2019-11-15T15:23:29-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/generate/pipe/</loc>
+    <lastmod>2019-11-08T23:45:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/</loc>
+    <lastmod>2019-11-10T08:28:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/config/update/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/</loc>
+    <lastmod>2019-11-11T13:31:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/version/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/build/view/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/service/view/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/step/view/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/</loc>
+    <lastmod>2019-11-10T08:28:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/metadata/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/config/remove/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/repo/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/validate/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/view/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/view/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/view/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/view/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/view/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/view/</loc>
+    <lastmod>2019-11-21T09:19:23-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/view/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/build/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/chown/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/generate/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/logs/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/logs/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/logs/</loc>
+    <lastmod>2019-11-11T09:11:16-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/</loc>
+    <lastmod>2019-11-11T13:38:31-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/remove/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/repair/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/repair/</loc>
+    <lastmod>2019-11-08T23:45:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/service/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/</loc>
+    <lastmod>2019-11-10T08:28:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/update/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/update/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/chown/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/config/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/remove/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/restart/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/</loc>
+    <lastmod>2019-11-10T08:28:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/step/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/step/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/plugins/registry/</loc>
+    <lastmod>2019-11-12T15:28:50-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/repo/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/</loc>
+    <lastmod>2019-11-10T08:28:41-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/service/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/stage/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/update/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/update/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/update/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/update/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/update/</loc>
+    <lastmod>2019-11-15T10:40:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/build/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/log/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/build/remove/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/repo/remove/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/secret/remove/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/service/remove/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/api/step/remove/</loc>
+    <lastmod>2019-11-11T06:31:49-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/ruleset/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/secret/</loc>
+    <lastmod>2019-11-14T20:03:54-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/pipeline/template/</loc>
+    <lastmod>2019-11-11T10:00:59-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/sdk/secret/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/step/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/service/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/log/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/usage/reference/cli/secret/</loc>
+    <lastmod>2019-11-08T12:38:24-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/search/index.json</loc>
+    <lastmod>2019-11-09T16:39:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://go-vela.github.io/docs/</loc>
+    <lastmod>2019-11-19T14:12:52-06:00</lastmod>
+  </url>
+  
+</urlset>

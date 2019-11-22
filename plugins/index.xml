@@ -1,0 +1,59 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Plugins</title>
+    <link>https://go-vela.github.io/docs/plugins/</link>
+    <description>Recent content in Plugins on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/plugins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Plugins: What Is</title>
+      <link>https://go-vela.github.io/docs/plugins/getting-started/what-is/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/plugins/getting-started/what-is/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A plugin is a Docker image with a pre-defined entrypoint. Typically they are designed to accomplish a single task in mind. Plugins can be used for deploying code, publishing artifacts, sending notifications or any type of general automation task.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Plugins: Git</title>
+      <link>https://go-vela.github.io/docs/plugins/registry/git/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/plugins/registry/git/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Git plugin is automatically injected as the first step of your pipeline to clone your repo.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Plugins: How To</title>
+      <link>https://go-vela.github.io/docs/plugins/getting-started/how-to/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/plugins/getting-started/how-to/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Documentation coming soon!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,877 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Pipeline</title>
+    <link>https://go-vela.github.io/docs/usage/reference/pipeline/</link>
+    <description>Recent content in Pipeline on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/usage/reference/pipeline/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Usage: Environment</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/environment/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;All environment variables specified in the tables below are injected into every step.&lt;/p&gt;
+
+&lt;h4 id=&#34;build-environment-variables&#34;&gt;Build Environment Variables&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_BRANCH&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;master&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;branch from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_CHANNEL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;queue channel the build was published to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_COMMIT&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;7fd1a60b01f91b314f59955a4e4d4e80d8edf11d&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;commit sha from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_CREATED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1556720958&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;unix timestamp representing build creation time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_ENQUEUED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1556730001&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;unix timestamp representing build enqueue time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_EVENT&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;push&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;webhook event that triggered the build&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_FINISHED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1556730045&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;unix timestamp representing build completion time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_HOST&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela-worker-1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;fully qualified domain name of the worker the build was executed on&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_MESSAGE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;New line at end of file.&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;message from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_NUMBER&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;build number&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_PARENT&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;previous build number&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_REF&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;refs/heads/master&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;reference from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_STARTED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1556730001&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;unix timestamp representing build start time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_SOURCE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;https://github.com/octocat/hello-world/commit/7fd1a60b01f91b314f59955a4e4d4e80d8edf11d&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;link from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_TITLE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Merge pull request #6 from octocat/patch-1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;title from the source commit&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_WORKSPACE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/home/octocat_hello-world_1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;working directory the build is executed in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;BUILD_TAG&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;v1.0.0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;tag is populated from the source reference&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;code&gt;BUILD_TAG&lt;/code&gt; is only populated during tag events.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;vela-environment-variables&#34;&gt;Vela Environment Variables&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;environment is Vela&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_ADDR&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela-server.localhost&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;fully qualified domain name of the Vela server&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_CHANNEL&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;queue channel the build was published to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_DATABASE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;postgres&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;database Vela is connected to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_HOST&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela-worker-1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;fully qualified domain name of the worker the build was executed on&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_QUEUE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;redis&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;queue build was published to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_RUNTIME&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;docker&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;runtime environment build was executed in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_SOURCE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;https://github.com&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;queue channel the build was published to&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_VERSION&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;v0.1.0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Vela version&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;VELA_WORKSPACE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;/home/octocat_hello-world_1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;working directory the build is executed in&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;CI&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;vela&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;CI enabled is Vela&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;repository-environment-variables&#34;&gt;Repository Environment Variables&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_BRANCH&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;master&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;default branch of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_CLONE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;https://github.com/octocat/hello-world.git&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;clone url of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_FULL_NAME&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;octocat/hello-world&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;full name of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_LINK&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;https://github.com/octocat/hello-world&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;direct url of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_NAME&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;hello-world&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;name of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_ORG&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;octocat&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;org of the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_PRIVATE&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;privacy setting for the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_TIMEOUT&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;60&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;timeout setting for the repository&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;REPOSITORY_TRUSTED&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;trusted setting for the repository&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Version</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/version/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;version&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;version of the file to use for compiling&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Metadata</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/metadata/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;template&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;used to idenitify if pipeline should be compiled as a template (default: &lt;code&gt;false&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Service</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/service/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;entrypoint&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;overwrite default container executable&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;environment&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;environment varibles to be added at runtime&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the Docker image&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the service&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ports&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specifiy the port container will listen on&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Step</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/step/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;commands&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specifiy the commands to be run inside step&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;detach&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specifiy if the container should detach as a service&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;entrypoint&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;overwrite default container executable&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;environment&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;environment varibles to be added at runtime&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;image&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the Docker image&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the step&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;parameters&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;variables under key are injected with &lt;code&gt;PARAMETER_&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;privileged&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specifiy if the container should run with privileges&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;pull&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specifiy if the container image should be pulled before build&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ruleset&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;set of rules to decide when step should run&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;secrets&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;set of secrets to be injected as all uppercase environment variables&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;template&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;when set expands template into step&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ulimit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;set ulimit values for syscall (Requries &lt;code&gt;privileged: true&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;volume&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;specify a volume to store data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Stage</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/stage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/stage/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;needs&lt;/code&gt; field has a default value set to &lt;code&gt;clone&lt;/code&gt;. This is because Vela assumes that the stage can&amp;rsquo;t be executed until the workspace is cloned to the worker.&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the build step&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;needs&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;stages that must complete before running the current stage (default: &lt;code&gt;clone&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;steps&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;sequential build execution instructions for the stage&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Ruleset</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/ruleset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/ruleset/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;h4 id=&#34;ruleset-keys&#34;&gt;ruleset keys&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;continue&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;set &lt;code&gt;true&lt;/code&gt; to continue steps on failure (Default: &lt;code&gt;false&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;if&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;used in conjunction with rules&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;operator&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;control and/or operator logic with rulesets (Default: &lt;code&gt;and&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;unless&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;used in conjunction with rules&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;rule-keys&#34;&gt;rule keys&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;All keys are array types&lt;/em&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;branch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;name or glob match for branches&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;event&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;type of events&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;path&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;files or paths within repo&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;repo&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;name or glob match for repositories&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;status&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;type of status&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;tag&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;N&lt;/td&gt;
+&lt;td&gt;name or glob match for tags&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h5 id=&#34;event-options&#34;&gt;event options&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;push&lt;/code&gt; - event type for build and repo push events&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pull_request&lt;/code&gt; - event type for build and repo pull_request events&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tag&lt;/code&gt; - event type for build and repo tag events&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;status-options&#34;&gt;status options&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;failure&lt;/code&gt; - status type for build and step failure statuses&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;killed&lt;/code&gt; - status type for build and step killed statuses&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;success&lt;/code&gt; - status type for build and step success statuses&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Secret</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/secret/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/secret/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;Since the &lt;code&gt;key&lt;/code&gt;, &lt;code&gt;engine&lt;/code&gt; and &lt;code&gt;type&lt;/code&gt; fields have default values set, &lt;strong&gt;these can be skipped&lt;/strong&gt; and Vela will implicitly set them.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;version: &amp;#34;1&amp;#34;
+
+steps:
+  - name: docker
+    image: docker.registry.com/vela-plugins/docker:1
+    registry: docker.registry.com
+    repo: docker.registry.com/app/hello-world
+    secrets: [ docker_username, docker_password ]
+    auto_tag: true
+
+secrets:
+  - name: docker_username
+&lt;span style=&#34;color:#a40000&#34;&gt;-   key: docker_username
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;-   engine: native
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;-   type: repo
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;  - name: docker_password
+&lt;span style=&#34;color:#a40000&#34;&gt;-   key: docker_password
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;-   engine: native
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;-   type: repo
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;engine&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;native&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;secret backend the worker uses to lookup the secret (default: &lt;code&gt;native&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;key&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;docker_username&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;key to the secret variable to lookup from the secret backend (default: secret &lt;code&gt;name&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;docker_username&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;name of the secret variable to be injected into the build&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;repo&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;secret type the worker uses to lookup the secret (default: &lt;code&gt;repo&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;engine-options&#34;&gt;Engine Options&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;native&lt;/code&gt; - stores the secret in the Vela database&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vault&lt;/code&gt; - stores the secret in the Vela Vault namespace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;type-options&#34;&gt;Type Options&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;repo&lt;/code&gt; - secrets that can only be used by a single repository&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;org&lt;/code&gt; - secrets that can be used by any repository in a single organization&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;shared&lt;/code&gt; - secrets that can be used by any repository in any organization&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Template</title>
+      <link>https://go-vela.github.io/docs/usage/reference/pipeline/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/pipeline/template/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;defaults&#34;&gt;Defaults&lt;/h2&gt;
+
+&lt;p&gt;n/a&lt;/p&gt;
+
+&lt;h2 id=&#34;key-appendix&#34;&gt;Key Appendix&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Key&lt;/th&gt;
+&lt;th&gt;Required&lt;/th&gt;
+&lt;th&gt;Explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;name of the template&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;source&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;path of the template including source address (i.e. githubcom/github/octocat/vela/templateyml)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;type&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Y&lt;/td&gt;
+&lt;td&gt;used to look up where to pull the template&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;type-options&#34;&gt;Type Options&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;github&lt;/code&gt; - templates can be stored in any public or private GitHub repository&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

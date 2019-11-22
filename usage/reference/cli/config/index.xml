@@ -1,0 +1,151 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Config</title>
+    <link>https://go-vela.github.io/docs/usage/reference/cli/config/</link>
+    <description>Recent content in Config on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/usage/reference/cli/config/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Usage: View</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/config/view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/config/view/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela view config - View details of the provided config file
+
+USAGE:
+   vela view config &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to view a config file.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+
+&lt;p&gt;N/A&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. View CLI config.
+    $ vela view config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela view config
+
+addr: https://vela-server.localhost
+token: qwerty123
+api-version: v1
+log-level: info&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Update</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/config/update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/config/update/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela update config - Update a config file
+
+USAGE:
+   vela update config &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to update a config file.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --addr value           location of vela server
+   --token value          User token &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; Vela server
+   --api-version value    api version to use &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; Vela server
+   --log-level value      &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; log level - options: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;trace&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;debug&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;info&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;warn&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;error&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;fatal&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;panic&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+   --org value            Provide the organization &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; the repository
+   --repo value           Provide the repository contained within the organization
+   --secret-engine value  Provide the engine &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; where the secret to be stored
+   --secret-type value    Provide the kind of secret to be stored&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Update CLI config with address.
+    $ vela update config --addr https://vela-server.localhost
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;. Update CLI config with personal token.
+    $ vela update config --token fakeToken
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. Update CLI config with specific API version.
+    $ vela update config --api-version v1
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;. Update CLI config with debug log level.
+    $ vela update config --log-level debug&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela update config --org github
+
+addr: https://vela-server.localhost
+token: qwerty123
+api-version: v1
+log-level: info
+org: github&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Remove</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/config/remove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/config/remove/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela remove config - Remove a field or all fields in the config file.
+
+USAGE:
+   vela remove config &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to remove a field or all fields in the config file.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --addr           removes the addr field from the config
+   --token          removes the token field from the config
+   --api-version    removes the api-version field from the config
+   --log-level      removes the log-level field from the config
+   --org            removes the org field from the config
+   --repo           removes the repo field from the config
+   --secret-engine  removes the secret-engine field from the config
+   --secret-type    removes the secret-type field from the config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Remove the CLI config file.
+    $ vela remove config
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;. Remove the address from the CLI config file.
+    $ vela remove config --address
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. Remove the API version from the CLI config file.
+    $ vela remove config --api-version
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;. Remove the log level from the CLI config file.
+    $ vela remove config --log-level&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela remove config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

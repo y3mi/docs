@@ -1,0 +1,131 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Build</title>
+    <link>https://go-vela.github.io/docs/usage/reference/cli/build/</link>
+    <description>Recent content in Build on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/usage/reference/cli/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Usage: Get</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/build/get/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/build/get/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela get build - Display a list of builds
+
+USAGE:
+   vela get build &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to get a list of builds.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --org value               Provide the organization &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; the repository &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$BUILD_ORG&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+   --repo value              Provide the repository contained within the organization &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$BUILD_REPO&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+   --output value, -o value  Print the output in wide, yaml or json format&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Get builds &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository.
+    $ vela get build --org github --repo octocat
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;. Get builds &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository with wide view output.
+    $ vela get build --org github --repo octocat --output wide
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. Get builds &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository with yaml output.
+    $ vela get build --org github --repo octocat --output yaml
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;. Get builds &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository with json output.
+    $ vela get build --org github --repo octocat --output json
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;. Get builds &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository when org and repo config or environment variables are set.
+    $ vela get build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela get build --org github --repo octocat
+
+NUMBER  STATUS  EVENT   BRANCH  DURATION
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;       failure push    master  45s
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;       failure push    master  50s
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;       success push    master  54s
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;       success push    master  55s
+&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;       pending push    master  ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: View</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/build/view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/build/view/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela view build - View details of the provided build
+
+USAGE:
+   vela view build &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to view a build.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --org value                                    Provide the organization &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; the repository &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$BUILD_ORG&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+   --repo value                                   Provide the repository contained within the organization &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$BUILD_REPO&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+   --build-number value, --build value, -b value  Provide the build number &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$BUILD_NUMBER&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+   --output value, -o value                       Print the output in json format&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. View build details &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository.
+    $ vela view build --org github --repo octocat --build-number &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;. View build details &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository with json output.
+    $ vela view build --org github --repo octocat --build-number &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; --output json
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. View build details &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; a repository when org and repo config or environment variables are set.
+    $ vela view build --build-number &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela view build --org github --repo octocat --number &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;
+
+id: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3349&lt;/span&gt;
+repositoryid: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+number: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;
+parent: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;
+event: push
+status: failure
+error: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;               &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Populates when the platform runs into an error with the build&lt;/span&gt;
+enqueued: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1561748976&lt;/span&gt;
+created: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1561748976&lt;/span&gt;
+started: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1561748975&lt;/span&gt;
+finished: &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1561749020&lt;/span&gt;
+deploy: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+clone: https://github.com/github/octocat.git
+source: https://github.com/github/octocat/commit/afafce5e33a8efd4340613b31a953107d6dec3a3
+title: push received from https://github.com/github/octocat
+message: Dummy commit
+commit: afafce5e33a8efd4340613b31a953107d6dec3a3
+sender: SimonOxley
+author: SimonOxley
+branch: master
+ref: refs/heads/master
+baseref: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+host: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;worker.host.com&amp;#34;&lt;/span&gt;
+runtime: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;docker&amp;#34;&lt;/span&gt;
+distribution: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;linux&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

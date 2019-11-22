@@ -1,0 +1,123 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vela – Generate</title>
+    <link>https://go-vela.github.io/docs/usage/reference/cli/generate/</link>
+    <description>Recent content in Generate on Vela</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://go-vela.github.io/docs/usage/reference/cli/generate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Usage: Config</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/generate/config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/generate/config/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela generate config - Generate a config yaml in a directory
+
+USAGE:
+   vela generate config &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to add a config file.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --addr value           location of vela server
+   --token value          User token &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; Vela server
+   --api-version value    api version to use &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; Vela server
+   --log-level value      &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; log level - options: &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;trace&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;debug&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;info&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;warn&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;error&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;fatal&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;panic&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+   --org value            Provide the organization &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; the repository
+   --repo value           Provide the repository contained within the organization
+   --secret-engine value  Provide the engine &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; where the secret to be stored
+   --secret-type value    Provide the kind of secret to be stored&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Generate CLI config from environment.
+    $ vela generate config
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;. Generate CLI config with address and token.
+    $ vela generate config --addr https://vela-server.localhost --token fakeToken
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. Generate CLI config with specific API version.
+    $ vela generate config --api-version v1
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt;. Generate CLI config with debug log level.
+    $ vela generate config --log-level debug&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;$ vela generate config --addr https://vela-server.localhost --token qwerty123
+
+addr: https://vela-server.localhost
+token: qwerty123
+api-version: v1
+log-level: info&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Usage: Pipe</title>
+      <link>https://go-vela.github.io/docs/usage/reference/cli/generate/pipe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://go-vela.github.io/docs/usage/reference/cli/generate/pipe/</guid>
+      <description>
+        
+        
+        
+
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+
+&lt;p&gt;The generate command allows you to generate default pipelines for languages Go, Java, or Node.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;NAME:
+   vela generate pipe - Generate a vela pipeline in a directory
+
+USAGE:
+   vela generate pipe &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; options&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;arguments...&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+
+DESCRIPTION:
+   Use this &lt;span style=&#34;color:#204a87&#34;&gt;command&lt;/span&gt; to generate a pipeline&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;OPTIONS:
+   --type value, -t value  Type of generic pipeline to be generated. &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;go&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;node&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt;java&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+   --path value, -p value  Filename to use to create the secret or secrets
+   --stages, -s            Define &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; the pipeline should be generated with stages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;EXAMPLES:
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;. Generate a vela pipeline in your current directory.&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    &lt;/span&gt;$&lt;span style=&#34;color:#4e9a06&#34;&gt; vela generate pipe
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; 2. Generate a vela pipeline in a current directory.&amp;#34;&lt;/span&gt;
+    $ vela generate pipe -path /path/to/dir/
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3&lt;/span&gt;. Generate a node vela pipeline in current directory.&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    &lt;/span&gt;$&lt;span style=&#34;color:#4e9a06&#34;&gt; vela generate pipe -type node
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; 4. Generate a java vela pipeline in current directory.&amp;#34;&lt;/span&gt;
+    $ vela generate pipe -type java
+ &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;5&lt;/span&gt;. Generate a go vela pipeline in a current directory.&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;    &lt;/span&gt;$&lt;span style=&#34;color:#4e9a06&#34;&gt; vela generate pipe -type go
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; 6. Generate a vela pipeline with stages in current directory.&amp;#34;&lt;/span&gt;
+    $ vela generate pipe -stages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;sample&#34;&gt;Sample&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;vela gen
+
+&amp;quot;.vela.yml&amp;quot; go pipeline generated.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;vela gen -p ./test/ -t java
+
+&amp;quot;./test/.vela.yml&amp;quot; java pipeline generated
+&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
